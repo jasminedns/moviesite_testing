@@ -4,24 +4,17 @@ import { filteredGenres } from '@/data/movieData'
 
 describe("Filter button and its onclick function",() => {
     test("Test that Filter button is in document",() => {
-        let clickedGenre = false
-        const handleGenre = () => {
-            clickedGenre = true
-        }
+      
         
-        render(<GenreOptions genresArray={filteredGenres} onGenreSelect={handleGenre}/>)
+        render(<GenreOptions genresArray={filteredGenres} onGenreSelect={()=>{}}/>)
 
         const filterButton = screen.getByRole("button",{name:"Filter By Genre"})
         expect(filterButton).toBeInTheDocument()
     }),
     
     test("Test that if filter button is clicked the list of genres is displaying",() => {
-         let clickedGenre = false
-        const handleGenre = () => {
-            clickedGenre = true
-        }
-        
-        render(<GenreOptions genresArray={filteredGenres} onGenreSelect={handleGenre}/>)
+       
+        render(<GenreOptions genresArray={filteredGenres} onGenreSelect={()=>{}}/>)
        
         const filterButton = screen.getByRole("button",{name:"Filter By Genre"})
         fireEvent.click(filterButton)
@@ -38,12 +31,9 @@ describe("Filter button and its onclick function",() => {
 })
 
 test("Test that particular genre is clicked ",()=> {
-     let clickedGenre = false
-        const handleGenre = () => {
-            clickedGenre = true
-        }
+     
     
-    render(<GenreOptions genresArray={filteredGenres} onGenreSelect={handleGenre} />)
+    render(<GenreOptions genresArray={filteredGenres} onGenreSelect={()=>{}} />)
     
         const filterButton = screen.getByRole("button",{name:"Filter By Genre"})
         fireEvent.click(filterButton)
