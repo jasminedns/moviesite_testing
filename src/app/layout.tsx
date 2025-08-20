@@ -1,3 +1,7 @@
+import Header from "@/components/Header";
+import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
+
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -27,7 +31,10 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <Header title="Popcorn Picks"/>
+        <Navigation />
+          {children}
+        <Footer />
       </body>
     </html>
   );

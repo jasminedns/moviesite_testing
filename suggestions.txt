@@ -1,0 +1,7 @@
+In the Navigation test:
+    - I'd suggest to remove the popcorn emote
+
+Not testing if the "My pick" page gets the picked movie.
+
+In the PopcornFacts:
+    -Use regex

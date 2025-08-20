@@ -8,9 +8,10 @@
     "start": "next start",
     "lint": "next lint",
     "test": "jest",
-    "test:watch" : "jest --watch"
+    "test:watch": "jest --watch"
   },
   "dependencies": {
+    "@phosphor-icons/react": "^2.1.10",
     "next": "15.4.6",
     "react": "19.1.0",
     "react-dom": "19.1.0"

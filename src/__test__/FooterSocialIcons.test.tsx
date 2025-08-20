@@ -1,5 +1,5 @@
 import {getByRole, getByTestId, render,screen} from '@testing-library/react'
-import SocialMediaIcons from '@/components/FooterSocialIcons'
+import SocialMediaIcons from '@/components/FooterSocialIcons/SocialMediaIcons'
 
 test("Test for social media icon links",()=>{
     render(<SocialMediaIcons />)
