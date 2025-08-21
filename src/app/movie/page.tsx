@@ -24,7 +24,7 @@ const Movie = () => {
                 <GenreOptions genresArray={filteredGenres} onGenreSelect={setSelectedGenre}/>
                 <ClearFilter onClear={() => setSelectedGenre(null)}/>
             </div>
-            <div className="bg-[#093A3E] flex flex-row flex-wrap justify-center">
+            <div className="bg-[#202A44] flex flex-row flex-wrap justify-center">
                 {
                     selectedGenre === null 
                     ? 

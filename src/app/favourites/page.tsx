@@ -23,7 +23,7 @@ const favourites = () => {
     return (
         <div 
             data-testid="fav_movie"
-            className="grow flex justify-center items-center bg-[#093A3E]">
+            className="grow flex justify-center items-center bg-[#202A44]">
             {
                 favouriteMovie 
                     ? <MovieDescription movie={favouriteMovie} favSelected={handleFavSelect} favMovie={redHeart}/>

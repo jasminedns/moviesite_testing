@@ -21,7 +21,7 @@ const Navigation = () => {
     ]
 
     return (
-        <div className="bg-[#093A3E] flex flex-row justify-center py-6">
+        <div className="bg-[#202A44] flex flex-row justify-center py-6">
             {
                 NavLinkArray && NavLinkArray.map((item, index) =>
                     <Link

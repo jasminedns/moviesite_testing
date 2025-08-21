@@ -14,13 +14,13 @@ const GenreOptions = ({genresArray, onGenreSelect}:GenreOptionsProp) => {
         <div className="relative">
             <button
                 onClick={() => setDropDownMenu(!dropDownMenu)}
-                className={`bg-[#093A3E] p-3 font-bold cursor-pointer w-[135px] ${dropDownMenu ? "rounded-tl-2xl rounded-tr-2xl" : "rounded-2xl"}`}
+                className={`bg-[#202A44] p-3 font-bold cursor-pointer w-[135px] ${dropDownMenu ? "rounded-tl-2xl rounded-tr-2xl" : "rounded-2xl"}`}
             >
                 Filter By Genre
             </button>
 
             {dropDownMenu && (
-                <div className="absolute z-99 w-[135px] bg-[#093A3E] rounded-bl-2xl rounded-br-2xl">
+                <div className="absolute z-99 w-[135px] bg-white rounded-bl-2xl rounded-br-2xl">
                     {genresArray.map((item, index) => (
                         <p 
                             data-testid="genre-options"
@@ -29,7 +29,7 @@ const GenreOptions = ({genresArray, onGenreSelect}:GenreOptionsProp) => {
                                 onGenreSelect(item);
                                 setDropDownMenu(false);
                             }}
-                            className={`text-center p-1 hover:bg-[#16929dd1] cursor-pointer ${item === "Action" ? "rounded-bl-2xl rounded-br-2xl" : ""}`}
+                            className={`text-center border-b-2 font-bold text-black p-1 hover:bg-[#bfccec] cursor-pointer ${item === "Action" ? "rounded-bl-2xl rounded-br-2xl" : ""}`}
                         >
                             {item}
                         </p>
