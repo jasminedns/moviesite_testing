@@ -7,7 +7,7 @@ import "@/app/globals.css"
 
 type MovieDescriptionProps = {
   movie: movieDataType;
-  favSelected: (movieName: string) => void;
+  favSelected: (movie: movieDataType) => void;
   favMovie: string | null;
 };
 
@@ -18,7 +18,7 @@ const MovieDescription = ({movie, favSelected, favMovie}:MovieDescriptionProps) 
     const pathname = usePathname();
 
     const handleFavourite = () => {
-        favSelected(movie.movieName)
+        favSelected(movie);
 
         localStorage.setItem("favouriteMovie", JSON.stringify(movie));
     }

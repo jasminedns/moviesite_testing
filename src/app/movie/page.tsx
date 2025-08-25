@@ -4,17 +4,18 @@ import ClearFilter from "@/components/Movie/ClearFilter";
 import GenreOptions from "@/components/Movie/GenreOptions";
 import MovieDescription from "@/components/Movie/MovieDescription";
 import { filteredGenres, moviedata } from "@/data/movieData";
+import { movieDataType } from "@/utils/types";
 import { useState } from "react";
 
 const Movie = () => {
     const [selectedGenre, setSelectedGenre] = useState<string | null>(null)
     const [redHeart, setRedHeart] = useState<string | null>(null)
     
-    const handleFavSelect = (movie: string) => {
-        if (redHeart === movie) {
+    const handleFavSelect = (movie: movieDataType) => {
+        if (redHeart === movie.movieName) {
             setRedHeart(null)
         } else {
-            setRedHeart(movie)
+            setRedHeart(movie.movieName)
         }    
     };
 

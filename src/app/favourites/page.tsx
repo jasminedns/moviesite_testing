@@ -8,8 +8,8 @@ const favourites = () => {
     const [favouriteMovie, setFavouriteMovie] = useState<movieDataType | null>(null)
     const [redHeart, setRedHeart] = useState<string | null>(null)
 
-    const handleFavSelect = (movie: string) => {
-        setRedHeart(movie)
+    const handleFavSelect = (movie: movieDataType) => {
+        setRedHeart(movie.movieName)
     };
 
     useEffect(() => {
