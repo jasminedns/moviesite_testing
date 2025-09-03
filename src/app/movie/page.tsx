@@ -21,7 +21,7 @@ const Movie = () => {
 
     return (
         <div className="grow">
-            <div className="p-10 w-[50%] m-auto flex flex-row justify-around">
+            <div className="p-10 w-full md:w-[50%] m-auto flex flex-row justify-around">
                 <GenreOptions genresArray={filteredGenres} onGenreSelect={setSelectedGenre}/>
                 <ClearFilter onClear={() => setSelectedGenre(null)}/>
             </div>

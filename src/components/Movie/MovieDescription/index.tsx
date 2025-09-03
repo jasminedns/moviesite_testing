@@ -27,10 +27,10 @@ const MovieDescription = ({movie, favSelected, favMovie}:MovieDescriptionProps) 
         <div 
             data-testid = "movie"
             className={`bg-white flex flex-col rounded-2xl m-4 p-6 ${showDescription === false ? "w-[45%]" : "w-full"}`}>
-            <div className="flex flex-row justify-around items-center">
-                <div>
+            <div className="flex flex-col md:flex-row justify-around items-center">
+                <div className="md:w-[30%]">
                     <img 
-                        className={`${rotate === "rotated" ? "animate-spin" : ""}`}
+                        className={`w-[50%] md:w-[50%] md:m-0 m-auto h-auto ${rotate === "rotated" ? "animate-spin" : ""}`}
                         data-testid="movie-icon"
                         src={`/${movie.icon}`} alt={`${movie.movieName} ${rotate}`} 
                         width={100} height={100}
@@ -51,7 +51,7 @@ const MovieDescription = ({movie, favSelected, favMovie}:MovieDescriptionProps) 
                 <div>
                     {movie.favourite && pathname !== "/favourites" && 
                         <img 
-                            className="cursor-pointer"
+                            className="cursor-pointer my-2"
                             onClick={handleFavourite}
                             src={favMovie === movie.movieName ? "favourite_icon.png" : "unfavourite_icon.png"} 
                             alt={`${favMovie === movie.movieName ? "favourite_icon.png" : "unfavourite_icon.png"} ${movie.movieName}`} 

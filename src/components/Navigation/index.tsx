@@ -28,7 +28,7 @@ const Navigation = () => {
                         aria-label={item.name}
                         href={item.link} 
                         key={index}
-                        className="text-white text-2xl mx-10 hover:underline cursor-pointer"
+                        className="text-white text-md md:text-2xl mx-4 md:mx-10 hover:underline cursor-pointer"
                     >
                         {item.name}
                     </Link>

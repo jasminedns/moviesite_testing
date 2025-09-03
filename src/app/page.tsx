@@ -1,7 +1,7 @@
 export default function Home() {
   return (
     <div className="grow flex justify-center items-center">
-      <div className="bg-[#202A44] w-[40%] rounded-2xl shadow-md shadow-[#dcdcdc] p-8 text-center">
+      <div className="bg-[#202A44] w-[90%] my-4 md:w-[40%] rounded-2xl shadow-md shadow-[#dcdcdc] p-8 text-center">
         <h2 className="text-amber-300 text-4xl">Welcome to Popcorn Picks</h2>
         <p className="py-6 text-xl">
           Lights, camera, action! your movie adventure starts here! Whether you're 

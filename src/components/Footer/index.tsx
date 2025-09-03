@@ -2,8 +2,8 @@ import SocialMediaIcons from "../FooterSocialIcons/SocialMediaIcons";
 
 const Footer = () => {
     return (
-        <footer className="bg-[#202A44] flex flex-row justify-between items-center p-10">
-            <div className="capitalize p-5 text-xl">
+        <footer className="bg-[#202A44] flex flex-col md:flex-row justify-between items-center p-10">
+            <div className="capitalize p-5 text-xl text-center">
                 <h5 className="hover:underline cursor-pointer">company</h5>
                 <h5 className="hover:underline cursor-pointer">support</h5>
                 <h5 className="hover:underline cursor-pointer">Popcorn picks</h5>
